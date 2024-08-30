@@ -34,7 +34,7 @@ namespace Pets.Controllers
 
             return Ok(pet);
         }
-        /*
+        
         [HttpDelete("{id}")]
         public ActionResult DeletePet(int id)
         {
@@ -51,7 +51,7 @@ namespace Pets.Controllers
 
             return Ok($"Pet with id of {id} is already deleted.");
         }
-
+        /*
         [HttpPut]
         public ActionResult UpdateOrCreatePet(Pet pet)
         {
