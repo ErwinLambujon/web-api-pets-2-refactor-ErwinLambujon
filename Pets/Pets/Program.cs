@@ -7,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddTransient<IOwnerInfoService, OwnerInfoService>();
 builder.Services.AddScoped<IOwnerInfoRepository, OwnerInfoRepository>();
+builder.Services.AddScoped<IPetRepository, PetRepository>();
 builder.Services.AddSingleton<DataStore>();
 
 
