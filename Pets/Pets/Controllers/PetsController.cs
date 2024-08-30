@@ -51,7 +51,7 @@ namespace Pets.Controllers
 
             return Ok($"Pet with id of {id} is already deleted.");
         }
-        /*
+        
         [HttpPut]
         public ActionResult UpdateOrCreatePet(Pet pet)
         {
@@ -66,6 +66,6 @@ namespace Pets.Controllers
 
             // if pet doesn't exist, we need to create it.
             return Ok($"Pet with id of {pet.Id} has been updated successfully.");
-        }*/
+        }
     }
 }
