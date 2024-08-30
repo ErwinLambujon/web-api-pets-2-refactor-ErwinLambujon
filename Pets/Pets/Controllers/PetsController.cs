@@ -21,7 +21,7 @@ namespace Pets.Controllers
         {
             return Ok(_petRepository.GetAllPets());
         }
-        /*
+        
         [HttpGet("{id}")]
         public ActionResult GetPet(int id)
         {
@@ -34,7 +34,7 @@ namespace Pets.Controllers
 
             return Ok(pet);
         }
-
+        /*
         [HttpDelete("{id}")]
         public ActionResult DeletePet(int id)
         {
