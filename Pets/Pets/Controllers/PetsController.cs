@@ -38,7 +38,6 @@ namespace Pets.Controllers
         [HttpDelete("{id}")]
         public ActionResult DeletePet(int id)
         {
-            // find the pet first
             bool deleted = _petRepository.DeletePet(id);
 
             if (!deleted)
@@ -46,7 +45,6 @@ namespace Pets.Controllers
                 return NotFound($"Pet with id of {id} does not exist.");
             }
 
-            // delete the pet
             _petRepository.DeletePet(id);
 
             return Ok($"Pet with id of {id} is already deleted.");
@@ -55,7 +53,6 @@ namespace Pets.Controllers
         [HttpPut]
         public ActionResult UpdateOrCreatePet(Pet pet)
         {
-            // find the pet first
             bool action = _petRepository.UpdateOrCreatePet(pet);
 
             if (action)
@@ -64,7 +61,6 @@ namespace Pets.Controllers
             }
             else
 
-            // if pet doesn't exist, we need to create it.
             return Ok($"Pet with id of {pet.Id} has been updated successfully.");
         }
     }
